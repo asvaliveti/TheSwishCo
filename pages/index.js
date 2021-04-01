@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#fcf0f0",
     '&:hover': {
-      backgroundColor: "#FFFFFF",
+      backgroundColor: "#fcf0f0",
     },
     marginLeft: 0,
     width: '100%',
@@ -39,10 +39,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   textfield: {
-    color: "#ffffff",
+    color: "#fcf0f0",
     padding: '10px',
     height: '90%',
     margin: '5px 0px 0px 0px'
+  },
+  container: {
+    color: "#fcf0f0",
+    backgroundColor: "#fcf0f0"
   }
 }));
 
@@ -58,7 +62,7 @@ export default class Home extends Component {
           <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main>
+        <main className="container">
           <PrimarySearchAppBar/>
         </main>
       </div>
